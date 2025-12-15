@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8402060315760846480}
   - component: {fileID: 8431878249963952425}
   - component: {fileID: 154609021334343335}
+  - component: {fileID: 6741660672513504209}
+  - component: {fileID: 4544902640218735716}
   m_Layer: 0
   m_Name: VFX_Smoke_Green
   m_TagString: Untagged
@@ -4774,6 +4776,9 @@ ParticleSystemRenderer:
   m_ReflectionProbeUsage: 0
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -4830,3 +4835,43 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &6741660672513504209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5705387627814833468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bd6a1b863775dcf48af631428a9a9a7c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  chargeChild: {fileID: 5705387627814833468}
+  chargedChild: {fileID: 5705387627814833468}
+  groundChild: {fileID: 5705387627814833468}
+  chargedChildActivationDelay: 0.5
+  destroyDelay: 0.5
+  colorChangeDelay: 0.5
+  colorChangeDuration: 0.5
+--- !u!135 &4544902640218735716
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5705387627814833468}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.5
+  m_Center: {x: 0, y: 0, z: 0}
