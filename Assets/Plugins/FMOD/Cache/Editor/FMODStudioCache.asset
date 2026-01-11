@@ -179,10 +179,10 @@ MonoBehaviour:
   Path: FMOD Studio/Tavern/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 639013993174844671
+  lastModified: 639037408829654080
   FileSizes:
   - Name: Desktop
-    Value: 7542112
+    Value: 7608960
   Exists: 1
 --- !u!114 &-3846463026078128879
 MonoBehaviour:
@@ -359,7 +359,7 @@ MonoBehaviour:
   StringsBanks:
   - {fileID: 7913461080952310069}
   cacheVersion: 131857
-  cacheTime: 639013993174864690
+  cacheTime: 639037408829669119
   SerializableEventsDict:
   - key: event:/Doors_single
     index: 0
@@ -547,11 +547,12 @@ MonoBehaviour:
   - {fileID: -4675321629453506534}
   IsStream: 0
   Is3D: 1
-  IsOneShot: 1
-  Parameters: []
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8314967023861206725}
   MinDistance: 1
   MaxDistance: 20
-  Length: 1749
+  Length: 6050
 --- !u!114 &5914879109147536089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -676,8 +677,35 @@ MonoBehaviour:
   Path: FMOD Studio/Tavern/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 639013993174864690
+  lastModified: 639037408829669119
   FileSizes:
   - Name: Desktop
-    Value: 2006
+    Value: 2052
+  Exists: 1
+--- !u!114 &8314967023861206725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Spellstart/Spell
+  m_EditorClassIdentifier: 
+  Name: Spell
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 352127068
+    data2: 3574177585
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Looping
+  - Release
+  - Cancel
   Exists: 1
