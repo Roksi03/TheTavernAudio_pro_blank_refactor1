@@ -166,7 +166,7 @@
 	</object>
 	<object class="SingleSound" id="{8881e1e0-3534-47db-9a82-ead163cf7e6b}">
 		<property name="start">
-			<value>4.4596874999999994</value>
+			<value>4.2999999999999998</value>
 		</property>
 		<property name="length">
 			<value>2.9596874999999998</value>
@@ -199,6 +199,9 @@
 		<property name="length">
 			<value>1.5</value>
 		</property>
+		<relationship name="triggerConditions">
+			<destination>{5b65f693-15aa-4da0-91a0-b372dba0751f}</destination>
+		</relationship>
 		<relationship name="audioFile">
 			<destination>{ff8e9bdc-63c3-455b-8e3e-560c6dabd847}</destination>
 		</relationship>
@@ -222,7 +225,7 @@
 			<value>4.4596874999999994</value>
 		</property>
 		<property name="length">
-			<value>2.9596874999999994</value>
+			<value>2.8000000000000007</value>
 		</property>
 		<relationship name="timeline">
 			<destination>{04e5addd-becd-4d0c-9c97-2e8726a36ce5}</destination>
@@ -309,6 +312,17 @@
 		</relationship>
 	</object>
 	<object class="MixerBusPanner" id="{0cf0ad82-0211-474b-97be-4b025321ea5c}" />
+	<object class="ParameterCondition" id="{5b65f693-15aa-4da0-91a0-b372dba0751f}">
+		<property name="minimum">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>1</value>
+		</property>
+		<relationship name="parameter">
+			<destination>{379d4f86-eec5-466b-80a4-c4ae3a25c038}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{d4378926-4167-402d-bb5b-c67aafb08025}">
 		<relationship name="effects">
 			<destination>{d9f2ed31-6fb2-49cf-ad35-eff4ec079301}</destination>
@@ -369,7 +383,7 @@
 	</object>
 	<object class="AutomationPoint" id="{390ae5fb-854e-4543-9b02-fb856e1f1755}">
 		<property name="position">
-			<value>4.4596874999999994</value>
+			<value>4.2999999999999998</value>
 		</property>
 		<property name="value">
 			<value>0</value>
@@ -380,7 +394,7 @@
 	</object>
 	<object class="AutomationPoint" id="{bfce4295-ac64-47e5-84be-9a3322c74c9d}">
 		<property name="position">
-			<value>4.6096874999999988</value>
+			<value>4.4499999999999993</value>
 		</property>
 		<property name="value">
 			<value>1</value>
