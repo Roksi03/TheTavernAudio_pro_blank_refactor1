@@ -139,7 +139,9 @@ public class spell_cast_new : MonoBehaviour
             if (chargeTimer >= chargeTime)
             {
                 FireSpell("released at end of CHARGING");
-            }
+                if (isAudioInitialized)
+                    audioSystem.SpellRelease();
+            }
             else
             {
                 CancelSpell();
@@ -149,8 +151,7 @@ public class spell_cast_new : MonoBehaviour
             }
             
             // --- LOGIKA AUDIO: Zatrzymanie głównego dźwięku ładowania po każdym zakończeniu ---
-            if (isAudioInitialized)
-                audioSystem.SpellRelease();
+           
 
             chargeTimer = 0f;
             currentState = SpellState.Idle;
