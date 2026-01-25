@@ -166,7 +166,7 @@ public class spell_cast_new : MonoBehaviour
             if (isAudioInitialized)
             {
                 audioSystem.SpellCancel(); 
-                audioSystem.SpellRelease();
+               
             }
                 
             
@@ -190,6 +190,7 @@ public class spell_cast_new : MonoBehaviour
             
             chargeTimer = 0f;
             currentState = SpellState.Idle;
+            return;
         }
 
         if (Input.GetMouseButtonDown(1))
