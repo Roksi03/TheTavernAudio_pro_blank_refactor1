@@ -46,7 +46,7 @@ public class AudioOcclusion : MonoBehaviour
         eventInstance = eventEmitter.EventInstance;
         eventInstance.getDescription(out eventDes);
         eventDes.getMinMaxDistance(out minDistance, out maxDistance);
-
+         
         Debug.Log(eventDes + " " + minDistance + " " + maxDistance);
 
         //eventDes = RuntimeManager.GetEventDescription(SelectAudio);
